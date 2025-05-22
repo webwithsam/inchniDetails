@@ -46,6 +46,7 @@ let data = [
 
 
 function test(s){   
+ console.log("sam");
  let ee = s.key.match(/[a-zA-Z]/);
  if(ee != null){
     let dd = ee.input;
