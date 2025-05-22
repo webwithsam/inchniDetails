@@ -1,7 +1,7 @@
-console.log("done");
-console.log("JS is working!");
-alert("Hello from script.js!");
-let matokeo = document.querySelector(".resultFromsearch")
+console.log("done")
+console.log("JS is working!")
+alert("Hello from script.js!")
+let matokeo = document.querySelector('.resultFromsearch');
 let frominput = document.querySelector("#dataz");
 let onyesha = document.querySelector('.display');
  let zote ="";
@@ -42,7 +42,7 @@ let data = [
     "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen",
     "Zambia", "Zimbabwe"
   ];
-  let fromsearch = []
+  let fromsearch = [];
 
 
 function test(s){   
@@ -75,7 +75,7 @@ function test(s){
      if(dd == "Backspace"){
         sasa = sasa.slice(0,-1);
         zote="";
-        fromsearch = []
+        fromsearch = [];
      data.forEach((element)=>{
             let find = new RegExp(`^${sasa}`,"i");
              let sa =  element.match(find);
@@ -94,7 +94,7 @@ function test(s){
     }
     if(sasa ==""){
         zote="";
-        fromsearch = []  
+        fromsearch = [] ; 
 
     }
     
@@ -107,7 +107,7 @@ function test(s){
 
 function chukuaHii(values){
     let toBeSearched = values.textContent.trim();
-    console.log(toBeSearched)
+    console.log(toBeSearched);
     frominput.value ="";
     frominput.value = toBeSearched;
     onyesha.innerHTML = "";
@@ -122,7 +122,7 @@ function chukuaHii(values){
       let ss =  await fetch(`https://restcountries.com/v3.1/name/${a}`)
       console.log(ss)
       let ss1 = await ss.json() 
-      let saa = ss1[0]
+      let saa = ss1[0];
       if(ss1 == null){
         matokeo.innerHTML = "kunakitu hakipo sawa"
       }
