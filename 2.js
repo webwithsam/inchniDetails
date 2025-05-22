@@ -1,4 +1,6 @@
-
+console.log("done");
+console.log("JS is working!");
+alert("Hello from script.js!");
 let matokeo = document.querySelector(".resultFromsearch")
 let frominput = document.querySelector("#dataz");
 let onyesha = document.querySelector('.display');
